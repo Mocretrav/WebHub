@@ -1,0 +1,169 @@
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-wrap: break-word;
+}
+
+.ScrollableContainer {
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: grey;
+  text-align: center;
+}
+.HeaderTopBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  width: 100%;
+  
+}
+.PageTitle{
+  line-height: 10px;
+}
+.WebTitle{
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  
+}
+
+.MainPart {
+  background-color: whitesmoke;
+  min-height: 68vh;
+  flex: 1;
+}
+
+.MainContent{
+  margin:  20px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: aqua;
+  overflow: auto;
+  min-height: 150px;
+  max-height: 33%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+
+.FußnotenContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  line-height: 30px;
+  
+}
+
+.FußnoteLink {
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.LockedUI {
+  position: fixed;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.QuestionMarkPicture {
+  min-height: 40px;
+  max-height: 15%;
+  height: 75px;
+}
+
+.QuestionMarkPicture:hover {
+  height: 100px;
+}
+
+.LinkLogo{
+  width: 100px;
+
+}
+
+/* Angereihte Bilder mit abgerundeten Rändern und Hervorhebung durch hovern */
+
+/* Wenn kein MainPart vorhanden ist */
+body:not(.MainPart) footer {
+  flex: 1;
+  max-height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  header{
+    min-height: 100px;
+   height: 100px;
+  }
+ .PageTitle{
+  padding: 2vh;
+  }
+  .MainContent{
+    margin:  5%;
+  }
+
+}
+@media only screen and (min-width: 601px) {
+  header{
+    min-height: 50px;
+  }
+ .PageTitle{
+  padding: 2vh;
+  }
+  .MainContent{
+    margin:  5%;
+  }
+
+}
+@media only screen and (min-width: 768px) {
+  header{
+    min-height: 50px;
+  }
+ .PageTitle{
+  padding: 2vh;
+  }
+  .MainContent{
+    margin:  5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header{
+    min-height: 50px;
+  }
+ .PageTitle{
+  padding: 2vh;
+  }
+  .MainContent{
+    margin:  5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header{
+    min-height: 50px;
+  }
+ .PageTitle{
+  padding: 2vh;
+  }
+  .MainContent{
+    margin:  5%;
+  }
+}
