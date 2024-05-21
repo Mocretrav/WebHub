@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  background-color: grey;
+  background-color: white;
   text-align: center;
 }
 .HeaderTopBar{
@@ -27,16 +27,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+  
   width: 100%;
   
 }
 
 
+.dropDown{
+  list-style: none;
+}
+
 .Right ul{
   margin: 0;
-  padding: 0;
+  padding: 0px 20px 0px 0px;
   font-family: roboto;
-  list-style: none;
   
 }
 
@@ -45,6 +49,7 @@ header {
   position: relative;
   
 }
+
 
 .Right li a{
   display: block;
@@ -59,7 +64,7 @@ header {
 .Right li ul.dropDown li{
   display: block;
   margin: 2px 0px;
-  background-color: grey;
+  background-color: white;
  
 }
 
@@ -89,8 +94,8 @@ header {
   
 }
 
-.MainPart {
-  background-color: whitesmoke;
+main {
+  background-color:ghostwhite;
   min-height: 68vh;
   flex: 1;
 }
@@ -118,6 +123,7 @@ footer {
   flex-direction: column;
   align-self: center;
   line-height: 30px;
+  flex-wrap: wrap;
   
 }
 
@@ -144,7 +150,7 @@ footer {
 }
 
 .LinkLogo{
-  width: 100px;
+  width: 50px;
 
 }
 
@@ -159,7 +165,6 @@ body:not(.MainPart) footer {
 @media only screen and (max-width: 600px) {
   header{
     min-height: 100px;
-    
   }
  .PageTitle{
   padding: 2vh;
@@ -174,7 +179,10 @@ body:not(.MainPart) footer {
   .MainContent{
     margin:  5%;
   }
-
+  .FußnotenContainer{
+    margin: 20px;
+    
+  }
 }
 @media only screen and (min-width: 601px) {
   header{
